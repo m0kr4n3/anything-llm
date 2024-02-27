@@ -1,5 +1,5 @@
 const VALID_PROTOCOLS = ["https:", "http:"];
-const INVALID_OCTETS = [192, 172, 10, 127];
+const INVALID_OCTETS = [192, 172, 10, 127, 0];
 
 function isInvalidIp({ hostname }) {
   const IPRegex = new RegExp(
